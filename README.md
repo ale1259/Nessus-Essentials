@@ -110,8 +110,7 @@
 
  <img src="https://i.imgur.com/uHsT5aJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
- 
--Select custom for this window, and select the hardrive you create. This will take some time too so come back when Nessus and Windows 10 are installed. To finish the VM select the region, skip the add a second keyboard part. Set up for personal use, Offline account, Limited expirience, name it, set up a password 
+ -Select custom for this window, and select the hardrive you create. This will take some time too so come back when Nessus and Windows 10 are installed. To finish the VM select the region, skip the add a second keyboard part. Set up for personal use, Offline account, Limited expirience, name it, set up a password 
 
 <img src="https://i.imgur.com/xFTTtEA.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
@@ -123,7 +122,7 @@
 
 <h2>Deployment and Configuration Steps</h2>
 
--Let's first check th IP address of the VM. Go to command prompt and type ipconfig and chekc your IP address
+-Let's first check th IP address of the VM. Go to command prompt and type ipconfig and check your IP address
 
 
 <img src="https://i.imgur.com/9iK5up6.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
@@ -142,7 +141,7 @@
 
 -Now ping it from your actual PC in the command prompt you should get a response 
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/fgY6UaS.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 -Go to Nessus Essentials it is basically a web app. Your session may have expired just sign in again. Create a new scan and  select a Basic Network Scan
 
@@ -206,19 +205,63 @@
 
 <img src="https://i.imgur.com/6eefcFz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
--Then launch the scan again and when it finished let's compare the results. We should be able to see more results since we provide Nessus a set of credentials and we configured the VM to accept remote scans
+-Then launch the scan again and when it finished let's compare the results. We should be able to see more results since we provide Nessus a set of credentials and we configured the VM to accept remote scans.
+
+<img src="https://i.imgur.com/TjjzP8o.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+
+-There is more vulnerabilities discovered by Nessus I got 4 Critical, 35 High, 6 Medium, 1 Low and 172 Info. If you compare both scan on the History tab you can see the difference in scanning with credentials and without them.You can browse in the vulnerabilities tab and look around to see information about each vulnerability found and see how to remidiate them
+
+- Let's install a old version of Firefox then run another scan to see the results. So go to Microsoft Edge and type install old version of Firefox. On the vendors website scroll down and look for Directory of other versions and languages and 
+
+
+<img src="https://i.imgur.com/uAyw2AC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-Then you can choose any version, for this project i will use 3.6.12/win32/en-US and download the .exe. Install Firefox is a basic installation process just click next until finally installed
+
+<img src="https://i.imgur.com/4h7sPyu.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+-After the scan is finished, click on it again and now we have way more vulnerabilities discovered by Nessus I got 82 Critical, 99 High, 20 Medium, 1 Low and 173 Info. You can check out History tab again and compare the three scans 
+
+<img src="https://i.imgur.com/gUriAeZ.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+
+-On the vulnerability tab go to Mixed that says Mozilla Firefox, on the Count part I can see 175 and click on it and you will se a chunck full of criticals vulnerabilities becuase of that version of Firefox is so old and has so many vulnerabilities.
+
+<img src="https://i.imgur.com/0C2EIRK.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+
+-If you go to Remidiations you will see some solutions to the vulnerabilities, and you can see that just installing the latest versions of Firefox I can fix 1798 vulnerabilities
+
+<img src="https://i.imgur.com/OYQrVa3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-Let's try to remidiate as many of these vulnerabilities as we can by doing simple things like unistall Firefox totally and run Windows Updates until there is no more updates that neeed to happen essentially. So go to Add and Remove Programs on the search bar or you can type appwiz.cpl on the run command as a shortcut 
+
+<img src="https://i.imgur.com/2xFiJCs.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+-Right click on Firefox and Uninstall, remove all personal data and customizations and proceed to uninstall
+
+<img src="https://i.imgur.com/KIUmplt.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+-Next go to Windows Updates and check for new updates if you already have what the updates you need are click install now. After every update you may have to restart the machine
+
+<img src="https://i.imgur.com/RAumevd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-Once we are up to date with the updates let's run a last scan to see how many vulnerabilities has been fixed 
+
+<img src="https://i.imgur.com/xzhhBCM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 
-<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 
-<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
-<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
-<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
+
+-Now let's go back top our host machine, go back to Nessus and we don't neeed to change our scan anymore just click launch again. This will do everything again scan the common open ports, inspect the registry, the services and the file system. It is going to discover this old deprecated version of Firefox and we will see that reflected oin the scan results
 
