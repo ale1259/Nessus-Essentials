@@ -91,29 +91,51 @@
 
 <img src="https://i.imgur.com/C6VqtRB.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-- Let's set up our Virtual Machine in the meantime
+- Let's set up our Virtual Machine in the meantime. Open VMware Worksation and create a new Virtual Machine, the Windows 10 ISO should be downloaded by now go and search for it
+
+<img src="https://i.imgur.com/Tj5jlhg.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+   
+ -Look up for the location of your ISO file and continue the process is pretty straight foward. On the disk size adjust depending on your capacity
+
+<img src="https://i.imgur.com/CF9fBnJ.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
+ -On this window select customize hardware. Depending on your hardware on this windows adjust the RAM dedicated to the VM, the number of processors, etc. 
+ 
+<img src="https://i.imgur.com/YZHozFp.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+ -Click close and Finish and it will start preparing the VM. Make sure you click any key to start booting the windows installation on the VM. Note press CTRL+Alt to return your cursor
+
+ -The Windows installation process is simple. On this window select I don't have a product key, after that select Windows 10 Pro, accept the licence terms
+
+ <img src="https://i.imgur.com/uHsT5aJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+ 
+-Select custom for this window, and select the hardrive you create. This will take some time too so come back when Nessus and Windows 10 are installed. To finish the VM select the region, skip the add a second keyboard part. Set up for personal use, Offline account, Limited expirience, name it, set up a password 
+
+<img src="https://i.imgur.com/xFTTtEA.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+ -Select "NO" for all of this settings. Continue skipping all the weird setting and Accept
+
+<img src="https://i.imgur.com/emSmPdh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- By now we should have our VM ready and Nessus Essentials ready to go. We are going to do a first basic scan against the VM, then a credential scan later to see what feedback we get from Nessus
+
+-Let's first check th IP address of the VM. Go to command line and type ipconfig and chekc your IP address
 
 
+<img src="https://i.imgur.com/9iK5up6.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
+ -Now that we have the IP address let's check connectivity from your actual PC. To do this we need to turn off the VM firewall. Type on wf.msc to serch for Windows Firewall 
 
-<img src="https://i.imgur.com/C6VqtRB.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/RZEn3Gq.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
+-Select Windows Defender Firewall Properties
 
+<img src="https://i.imgur.com/3E6gR3i.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+-And turn off the firewall state on the Domain Profile, Private Profile and Public Profile sections
 
-
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
-
-
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
-
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
-
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/vZNEupP.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
