@@ -220,6 +220,9 @@
 
 <img src="https://i.imgur.com/4h7sPyu.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
+-Now let's go back top our host machine, go back to Nessus and we don't neeed to change our scan anymore just click launch again. This will do everything again scan the common open ports, inspect the registry, the services and the file system. It is going to discover this old deprecated version of Firefox and we will see that reflected on the scan results
+
+
 -After the scan is finished, click on it again and now we have way more vulnerabilities discovered by Nessus I got 82 Critical, 99 High, 20 Medium, 1 Low and 173 Info. You can check out History tab again and compare the three scans 
 
 <img src="https://i.imgur.com/gUriAeZ.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -248,20 +251,10 @@
 
 <img src="https://i.imgur.com/xzhhBCM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
+-Now let's check our fourth scan and see how it went. As we can see we decrease the amount of vulnerabilities now we have 2 Critical, 15 High, 4 Medium, 1 Low and 172 Info. You can dive into these vulnerabilites as I said previously and check what going on, maybe try to remidiate some of these and hardening your system.
 
-
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
-
-
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/a7Fz0Nj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
-
-
-
--Now let's go back top our host machine, go back to Nessus and we don't neeed to change our scan anymore just click launch again. This will do everything again scan the common open ports, inspect the registry, the services and the file system. It is going to discover this old deprecated version of Firefox and we will see that reflected oin the scan results
 
