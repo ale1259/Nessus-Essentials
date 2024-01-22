@@ -121,6 +121,8 @@
 
 - By now we should have our VM ready and Nessus Essentials ready to go. We are going to do a first basic scan against the VM, then a credential scan later to see what feedback we get from Nessus
 
+<h2>Deployment and Configuration Steps</h2>
+
 -Let's first check th IP address of the VM. Go to command prompt and type ipconfig and chekc your IP address
 
 
