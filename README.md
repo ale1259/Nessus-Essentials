@@ -153,32 +153,66 @@
 
 <img src="https://i.imgur.com/ricNvKy.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 
+-Click and Launch the scan. 
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/SVYEKmK.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+
+-You can check the progress if you click on it. Let's wait for the scan to finish and see
+
+<img src="https://i.imgur.com/pdJUJt5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-Now that the scan was run you can check and see the severity of the Vulnerabilities from Critical to Info, since we run this scan without credentials it will just give us a little bit of vulnerabilities 
+
+<img src="https://i.imgur.com/eVoXhmU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-You can click on vulnerabilities and check what is going on, it will show all of the vulnerabilities that were found and you can click on them and will give you more information even how to remidiate it. The blue ones(info) won't probably requiere a solution but it's something that you should be aware off 
+
+<img src="https://i.imgur.com/5ccSUJ3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- Next thing we are going to do is set up the VM to be able to accept authenticated scans and provide the credentials to Nessus and we are going to run the scan again and see the results of the new scan
+
+-Now back into the VM let's search for services 
+
+<img src="https://i.imgur.com/VNMdf2a.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+-First we are going to enable Remote Registry that will allow the scanner to connect to this computer registry and kind of crawl through the registry and look for insecure configurations, double click on it after you found it 
+
+<img src="https://i.imgur.com/TBeMjj9.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+-Set up the starup type on Automatic -> Start -> OK. Now it is enabled
+
+<img src="https://i.imgur.com/8Gxs489.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+ -Now go to Change User Account Control settings and since our computer is not on the domain we have to do the kind of hacks things to be able to run the scan 
+ 
+<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
+-Turn the bar all the way down and click OK
+
+<img src="https://i.imgur.com/OSf0IO5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
 
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
 
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
 
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
 
 
-
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
+<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
 
-
-
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
