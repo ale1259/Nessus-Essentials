@@ -120,7 +120,7 @@
 
 - By now we should have our VM ready and Nessus Essentials ready to go. We are going to do a first basic scan against the VM, then a credential scan later to see what feedback we get from Nessus
 
--Let's first check th IP address of the VM. Go to command line and type ipconfig and chekc your IP address
+-Let's first check th IP address of the VM. Go to command prompt and type ipconfig and chekc your IP address
 
 
 <img src="https://i.imgur.com/9iK5up6.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
@@ -137,8 +137,48 @@
 
 <img src="https://i.imgur.com/vZNEupP.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
+-Now ping it from your actual PC in the command prompt you should get a response 
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-Go to Nessus Essentials it is basically a web app. Your session may have expired just sign in again. Create a new scan and  select a Basic Network Scan
+
+<img src="https://i.imgur.com/XinsTmz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-Name it something like Windows 10 Single Host and on the targets section put the VM IP address. You can configure the scan to do it regularly if you work for an organization for instance, an even provide the credentials of the VM so Nessus can go deeply into the VM and scan even more potential vulnerabilities. 
+
+<img src="https://i.imgur.com/QWOpmXZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-Leave everything by default and click Save, and now we have the scan to run it in the future
+
+<img src="https://i.imgur.com/ricNvKy.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+
 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
+
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
