@@ -8,7 +8,8 @@
 - Nessus Esssenials
 
 <h2>Operating Systems Used </h2>
- - Windows 10
+
+- Windows 10
 
 
  <h2>High-Level Deployment and Configuration Steps</h2>
@@ -191,16 +192,19 @@
 
 <img src="https://i.imgur.com/OSf0IO5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
+-Now open the registry and we need to add a key that's supposed to further disable user account control for the remote account we are going to use to connect to this computer during the scan 
 
-<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/MDesEpj.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
+-We need to browse for HKEY_LOCAL_MACHINE->Software->Microsoft->Windows->CurrentVersion->Policies->System. Inside here we are going to create a word called "LocalAccountTokenFilterPolicy" right click on a blanck->New->DWORD(32-bit)Value, name it and then Enter, double click it and set the value data to 1, close the registry. Next restart the VM
 
+<img src="https://i.imgur.com/athysoQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+-Then log in again and we need to go to Nessus, check the scan you created, click on More and Configure, and we are going to add a set of credentials. Type the username and password of the VM and click save
 
+<img src="https://i.imgur.com/6eefcFz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-
-<img src="https://i.imgur.com/c0ERbUX.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+-Then launch the scan again and when it finished let's compare the results. We should be able to see more results since we provide Nessus a set of credentials and we configured the VM to accept remote scans
 
 
 
